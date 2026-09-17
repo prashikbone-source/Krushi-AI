@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌾 Smart Krushi Dashboard</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>🥛 Milk</h2>
+<input id="animal" placeholder="Animal">
+<input id="litre" placeholder="Litre">
+<button onclick="saveMilk()">Save</button>
+</div>
+
+<div class="card">
+<h2>🌱 Crop</h2>
+<input id="soil" placeholder="Soil">
+<input id="season" placeholder="Season">
+<button onclick="getCrop()">Suggest</button>
+<p id="cropResult"></p>
+</div>
+
+<div class="card">
+<h2>🧠 AI Detection</h2>
+<input type="file" id="image">
+<button onclick="detect()">Analyze</button>
+<div id="aiResult"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
